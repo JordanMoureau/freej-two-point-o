@@ -165,7 +165,7 @@ export default function WeRankSitesPage() {
           <KeywordBubbles items={bubbles} />
 
           <GetProposal
-            image={"/anSEOexpertsbagel.png"}
+            // image={"/anSEOexpertsbagel.png"}
             header={"Have a proposal delivered to you & find out.."}
             alt={"the fancy dinner of an SEO expert"}
             list={ProposalList}
