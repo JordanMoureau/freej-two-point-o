@@ -208,17 +208,15 @@ export default function LogosBranding() {
             where="Google"
           />
 
-          <DoubleImages images={images} margin="-14rem">
-            <div className="text-block">
-              <p>Everything designed and built right here in Idaho.</p>
-              <h1>Local design that scales nationwide</h1>
-              <h4>
-                From discovery to delivery, nothing is outsourced. Our creative
-                process ensures your brand feels consistent and authentic.
-              </h4>
-              <div className="callout">100% CDA Crafted</div>
-            </div>
-          </DoubleImages>
+          <div className="text-block">
+            <p>Everything designed and built right here in Idaho.</p>
+            <h1>Local design that scales nationwide</h1>
+            <h4>
+              From discovery to delivery, nothing is outsourced. Our creative
+              process ensures your brand feels consistent and authentic.
+            </h4>
+            <div className="callout">100% CDA Crafted</div>
+          </div>
 
           <ContactForm />
 
@@ -231,12 +229,6 @@ export default function LogosBranding() {
                 Press Releases
               </a>
             </div>
-            <Review
-              review="The branding package we got made everything click — site, ads, socials. Total night and day."
-              author="-Martha D @ The Supper Club Spokane"
-              link="https://google.com"
-              where="Google"
-            />
           </div>
         </div>
 
