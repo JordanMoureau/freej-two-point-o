@@ -1,0 +1,70 @@
+.connect {
+  background-image: url("/hero.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+  svg {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .connect-bars {
+    background-color: white;
+    border: 1.8px solid black;
+    border-radius: 100px;
+    padding: 0.3rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .pink {
+    background-color: var(--pink);
+  }
+
+  .social-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    .social-bubble {
+      border: 1.8px solid black;
+      background-color: var(--pink);
+      padding: 1rem;
+      line-height: 0;
+      border-radius: 100px;
+    }
+  }
+}

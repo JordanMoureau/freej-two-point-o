@@ -1,0 +1,267 @@
+@import "styles/topper.scss";
+@import "styles/root.scss";
+@import "styles/footer.scss";
+@import "styles/keywordbubbles.scss";
+@import "styles/hero.scss";
+@import "styles/getpropped.scss";
+@import "styles/review.scss";
+@import "styles/nav.scss";
+@import "styles/contactform.scss";
+@import "styles/doubleimages.scss";
+@import "styles/sidebar.scss";
+@import "styles/ourstory.scss";
+@import "styles/connect.scss";
+@import "styles/getaproposalpag.scss";
+@import "styles/bookacall.scss";
+@import "styles/journal.scss";
+@import "styles/pressreleases.scss";
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-raleway), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: var(--step-0);
+  line-height: 1.55;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "gelica", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: var(--step-4);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: var(--step-3);
+  line-height: 1.15;
+  font-style: italic;
+  font-weight: 500;
+}
+h3 {
+  font-family: "gelica", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: var(--step-3);
+  line-height: 1.1;
+}
+h4 {
+  font-size: var(--step-2);
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: var(--step--1);
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+p {
+  font-size: var(--step--1);
+  line-height: 1.25;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.callout {
+  font-size: var(--step-1);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.italic {
+  font-style: italic;
+}
+
+img {
+  display: block;
+  border-radius: 40px;
+  border: var(--border);
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.small-button {
+  background-color: var(--pink);
+  border: var(--border);
+  font-size: var(--step--1);
+  line-height: 1.25;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 40px;
+  width: fit-content;
+  padding: 0.1rem 0.7rem;
+  height: fit-content;
+}
+
+.mid-button {
+  background-color: var(--pink);
+  border: var(--border);
+  font-size: var(--step-1);
+  line-height: 1.25;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 40px;
+  width: fit-content;
+  padding: 0.1rem 0.7rem;
+  color: black;
+}
+
+.mid-button:hover {
+  background-color: white;
+  transition: 1s;
+}
+
+.small-button:hover {
+  background-color: white;
+  transition: 1s;
+}
+
+.large-button:hover {
+  background-color: white;
+  transition: 1s;
+}
+
+ul {
+  list-style: none;
+  padding-left: 1.5rem; /* give room for arrow */
+}
+
+ul li {
+  position: relative;
+  margin: 2rem 1rem;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  left: -55px;
+  top: 0.2em;
+  width: 3rem;
+  height: 1rem;
+  background-color: currentColor;
+  -webkit-mask: url("/arrow.svg") center / contain no-repeat;
+  mask: url("/arrow.svg") center / contain no-repeat;
+}
+
+.text-block {
+  width: 100%;
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 1200px;
+  h1 {
+    font-size: var(--step-5);
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.column-one {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.column-two {
+  display: none;
+  max-width: 700px;
+}
+
+.white-box {
+  background-color: white;
+  border: var(--border);
+  border-radius: 40px;
+}
+
+.cdas {
+  background-image: url("/coeurdaleneidaho.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: var(--border);
+  border-radius: 40px;
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 6rem;
+  .middle-bits {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+    text-align: center;
+    h1 {
+      font-size: var(--step-5);
+    }
+  }
+}
+
+.pink {
+  background-color: var(--pink) !important;
+}
+
+.bubble-list {
+  margin: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 1rem;
+}
+.text-bubble {
+  width: fit-content;
+  border: var(--border);
+  font-weight: 700;
+  font-family: var(--font-raleway), sans-serif;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 1500px) {
+  .column-two {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .text-block {
+    padding: 1rem 2rem;
+  }
+}

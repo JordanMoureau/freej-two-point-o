@@ -1,0 +1,23 @@
+.hero {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  width: 100%;
+  background-image: url("/hero.png");
+  background-position: top center;
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+
+  .hero-text {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}

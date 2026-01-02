@@ -1,0 +1,115 @@
+form {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  font-weight: 900;
+  gap: 1rem;
+  margin-top: 2rem;
+  font-size: var(--step-1);
+  .how-can-we {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  button {
+    border: var(--border);
+    background-color: white;
+    border-radius: 40px;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: var(--font-raleway), sans-serif;
+  }
+
+  button:hover {
+    background-color: var(--pink);
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: var(--pink);
+  }
+}
+input {
+  background-color: white;
+  border: var(--border);
+  border-radius: 40px;
+  padding: 10px 2rem;
+  width: fit-content;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: var(--font-raleway), sans-serif;
+}
+
+.website {
+  width: 85%;
+}
+
+textarea {
+  color: black;
+  padding: 2rem;
+  width: 100%;
+  height: 250px;
+  background-color: white;
+  border: var(--border);
+  border-radius: 40px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: var(--font-raleway), sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.submit {
+  text-transform: uppercase;
+  background-color: var(--pink);
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--pink);
+  transition: border-color 0.2s;
+}
+
+@media screen and (max-width: 950px) {
+  .website {
+    width: 100%;
+  }
+
+  .how-can-we button {
+    padding: 0.5rem;
+  }
+  .how-can-we input {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  form .how-can-we {
+    flex-direction: column;
+    align-items: start;
+
+    button {
+      width: 100%;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+
+  .submit {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

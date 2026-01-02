@@ -1,0 +1,169 @@
+/* your existing rules */
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  padding: 20px;
+  color: black;
+  /* REMOVE the old li:hidden; we’ll hide/show the <ul> instead */
+}
+
+/* keep your existing main-nav + item styles */
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: relative;
+
+  .small-button {
+    margin-left: 50px;
+  }
+}
+
+.main-nav-item {
+  font-style: italic;
+  font-weight: 800;
+}
+
+/* --- minimal dropdown behavior --- */
+
+/* hide all submenus by default */
+.nav > .main-nav ul {
+  min-width: 220px;
+  position: absolute;
+  top: 30px;
+  transition: 1s;
+  z-index: 100;
+  text-align: left;
+  display: none;
+  margin: 0;
+  padding: 15px 25px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  list-style: none;
+  background: linear-gradient(
+    to top,
+    rgba(249, 248, 244, 0.95) 0%,
+    /* almost solid at top */ rgba(249, 248, 244, 0.75) 40%,
+    rgba(249, 248, 244, 0.25) 80%,
+    rgba(249, 248, 244, 0) 100% /* fades completely out */
+  );
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.nav-list:hover {
+  font-weight: 700;
+}
+
+/* show the submenu when the header is hovered/focused */
+.main-nav-item:hover + ul,
+.main-nav-item:focus-within + ul {
+  display: block;
+}
+
+/* keep it open while hovering the submenu itself */
+.main-nav ul:hover {
+  display: block;
+}
+
+.dropdown::before {
+  content: "";
+  position: absolute;
+  top: -14px; /* height of the gap you want to cover */
+  left: 0;
+  right: 0;
+  height: 16px; /* extend hover zone upward */
+  /* stays invisible; expands hover area */
+}
+
+.mobile-nav {
+  display: none;
+  position: relative;
+}
+
+.hamburger {
+  z-index: 100;
+  display: flex;
+  width: 3rem;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+
+  span {
+    width: 100%;
+    background-color: black;
+    border-radius: 100px;
+    height: 3px;
+    transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+      opacity 0.25s ease, background-color 0.3s ease;
+  }
+
+  &.open {
+    position: fixed;
+    right: 20px;
+    span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    span:nth-child(2) {
+      opacity: 0;
+    }
+    span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+  }
+}
+
+.mobile-menu {
+  background-color: var(--background);
+  color: black;
+  border-left: 30px solid var(--pink);
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  transform: translateX(100%); // start offscreen
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 90; // just under the hamburger
+  &.show {
+    transform: translateX(0);
+  }
+
+  .mobile-nav-list {
+    text-align: left;
+    margin-top: 10vh;
+
+    .mobile-group-title {
+      font-weight: 900;
+    }
+  }
+
+  .nav-footer {
+    width: 100%;
+    justify-content: start;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2rem;
+    color: black;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+}

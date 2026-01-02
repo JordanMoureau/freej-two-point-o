@@ -1,0 +1,23 @@
+.press-main {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    background-image: url("/coeurdaleneidaho.png");
+    .hero-text {
+      max-width: 1200px;
+    }
+  }
+}
+
+.journal {
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  a {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

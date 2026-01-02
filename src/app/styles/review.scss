@@ -1,0 +1,91 @@
+.review-component {
+  max-width: 850px;
+  padding: 1rem;
+}
+
+.review-box {
+  margin: 1rem;
+  background-color: white;
+  padding: 2rem 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border-radius: 40px;
+  border: var(--border);
+  align-items: flex-start;
+  gap: 30px;
+  justify-content: space-between;
+  color: black;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+
+  .review {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .content {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.quote-left {
+  font-size: 10rem;
+  background-color: var(--pink);
+  border-radius: 100px;
+  border: var(--border);
+  padding: 15px;
+  margin-left: -42px;
+  margin-top: -10px;
+
+  svg {
+    width: 56px;
+    height: 56px;
+    display: block;
+  }
+}
+.quote-right {
+  font-size: 10rem;
+  background-color: var(--pink);
+  border-radius: 100px;
+  border: var(--border);
+  padding: 15px;
+  margin-right: -42px;
+  margin-bottom: -20px;
+  margin-top: 10%;
+  svg {
+    width: 56px;
+    height: 56px;
+    display: block;
+    transform: scaleX(-1);
+  }
+}
+
+.blurb {
+  font-style: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  max-width: 700px;
+
+  a {
+    font-weight: 900;
+  }
+
+  .stars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px 0px;
+    svg {
+      font-size: 1.9rem;
+    }
+  }
+}
