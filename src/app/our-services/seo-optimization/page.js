@@ -248,23 +248,6 @@ export default function SeoOptimization() {
           </div>
 
           <ContactForm />
-
-          <div className="cdas">
-            <div className="middle-bits">
-              <p>SEO-First Web Design & Strategy</p>
-              <h1>Coeur D&apos;Alene’s SEO Partner for Growing Brands</h1>
-              <h4>Small studio. Big impact.</h4>
-              <a className="mid-button" href="/our-story/press-releases">
-                Press Releases
-              </a>
-            </div>
-            <Review
-              review="Jordan made SEO feel understandable instead of overwhelming. Traffic is up, leads are better quality, and we finally have a plan."
-              author="-Skyler P @ Regional Service Business"
-              link="https://google.com"
-              where="Google"
-            />
-          </div>
         </div>
 
         <div className="column-two">
