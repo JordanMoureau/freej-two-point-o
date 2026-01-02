@@ -192,7 +192,6 @@ export default function SeoOptimization() {
           <KeywordBubbles items={bubbles} />
 
           <GetProposal
-            image={"/seoproposal.png"}
             header={"See what strategic SEO could do for your traffic"}
             alt={"SEO strategy and roadmap proposal"}
             list={ProposalList}
@@ -238,17 +237,15 @@ export default function SeoOptimization() {
             where="Google"
           />
 
-          <DoubleImages images={images} margin="-14rem">
-            <div className="text-block">
-              <p>SEO strategy, development, and implementation—all in-house.</p>
-              <h1>Local SEO Expertise, Built to Scale</h1>
-              <h4>
-                From initial audit to ongoing optimization, everything is
-                handled right here in Coeur d&apos;Alene.
-              </h4>
-              <div className="callout">100% CDA Crafted</div>
-            </div>
-          </DoubleImages>
+          <div className="text-block">
+            <p>SEO strategy, development, and implementation—all in-house.</p>
+            <h1>Local SEO Expertise, Built to Scale</h1>
+            <h4>
+              From initial audit to ongoing optimization, everything is handled
+              right here in Coeur d&apos;Alene.
+            </h4>
+            <div className="callout">100% CDA Crafted</div>
+          </div>
 
           <ContactForm />
 
