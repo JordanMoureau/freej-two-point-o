@@ -169,7 +169,7 @@ export default function WhyGetSeo() {
           </div>
           <KeywordBubbles items={bubbles} />
           <GetProposal
-            image={"/anSEOexpertsbagel.png"}
+            image={"/anSEOexpertsbagel.PNG"}
             header={"Free Local Visibility Review — Delivered Fast"}
             alt={"Coeur d'Alene SEO proposal preview"}
             list={proposalBullets}
