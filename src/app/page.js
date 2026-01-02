@@ -46,7 +46,7 @@ export default function Home() {
           </div>
 
           <GetProposal
-            image={"/dumplingdinner.png"}
+            image={"/dumplingdinner.PNG"}
             header={"Have a proposal delivered to you & find out.."}
             alt={"the fancy dinner of an SEO expert"}
             list={ProposalList}
