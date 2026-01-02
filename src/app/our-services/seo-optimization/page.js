@@ -188,8 +188,8 @@ export default function SeoOptimization() {
               your site.
             </p>
           </div>
-
-          <KeywordBubbles items={bubbles} />
+          {/* 
+          <KeywordBubbles items={bubbles} /> */}
 
           <GetProposal
             header={"See what strategic SEO could do for your traffic"}
