@@ -1,6 +1,11 @@
 import { FaStar } from "react-icons/fa6";
 
-export default function GetProposal({ image, header, list, alt }) {
+export default function GetProposal({
+  image = "/dumplingdinner.PNG", // 👈 default image
+  alt = "SEO proposal and growth strategy preview",
+  header,
+  list = [],
+}) {
   return (
     <div className="get-propped">
       <img src={image} alt={alt} />
